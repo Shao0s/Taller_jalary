@@ -1,0 +1,12 @@
+.admin-link{
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #ff8a25;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-link:hover{
+    text-decoration: underline;
+}

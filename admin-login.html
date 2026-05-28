@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Jalyry</title>
+    <title>Admin Login - Jalyry</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,53 +11,39 @@
 
 <div class="login-container">
 
-    <h1>Crear Cuenta</h1>
+    <h1>Administrador</h1>
 
-    <form id="register-form">
-
-        <input
-            type="text"
-            id="name"
-            placeholder="Nombre completo"
-            required
-        >
-
-        <input
-            type="tel"
-            id="phone"
-            placeholder="Teléfono"
-            required
-        >
+    <form id="admin-login-form">
 
         <input
             type="email"
-            id="email"
-            placeholder="Correo"
+            id="admin-email"
+            placeholder="Correo del administrador"
             required
         >
 
         <input
             type="password"
-            id="password"
+            id="admin-password"
             placeholder="Contraseña"
             required
         >
 
         <button type="submit">
-            Registrarse
+            Entrar como Admin
         </button>
 
     </form>
 
     <a href="login.html" class="admin-link">
-    ¿Ya tienes cuenta? Inicia sesión
+    ← Volver al login de clientes
 </a>
 
     <p id="message"></p>
 
 </div>
 
-<script type="module" src="js/register.js"></script>
+<script type="module" src="js/admin-login.js"></script>
 
 </body>
 </html>

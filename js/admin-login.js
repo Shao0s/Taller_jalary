@@ -17,14 +17,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-const form = document.getElementById("login-form");
+const form = document.getElementById("admin-login-form");
 
 form.addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("admin-email").value;
+    const password = document.getElementById("admin-password").value;
 
     try {
 
@@ -34,14 +34,24 @@ form.addEventListener("submit", async (e) => {
             password
         );
 
-        window.location.href = "client/client_dashboard.html";
+        // CORREO DEL ADMIN
+        const adminEmail = "admin@jalyry.com";
 
-        console.log(userCredential.user);
+        if(userCredential.user.email === adminEmail){
+
+            window.location.href = "admin/admin_dashboard.html";
+
+        } else {
+
+            document.getElementById("message").textContent =
+                "No tienes permisos de administrador";
+
+        }
 
     } catch (error) {
 
         document.getElementById("message").textContent =
-        "Correo o contraseña incorrectos";
+            "Correo o contraseña incorrectos";
 
         console.error(error);
     }
