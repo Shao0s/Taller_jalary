@@ -4,56 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Jalyry</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
-<div class="login-container">
+<div class="login-page">
 
-    <h1>Crear Cuenta</h1>
+    <div class="login-card">
 
-    <form id="register-form">
+        <h1 class="welcome-title">
+            Crear cuenta
+        </h1>
 
-        <input
-            type="text"
-            id="name"
-            placeholder="Nombre completo"
-            required
-        >
+        <div class="line"></div>
 
-        <input
-            type="tel"
-            id="phone"
-            placeholder="Teléfono"
-            required
-        >
+        <!-- LOGO -->
+        <div class="logo-container">
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Correo"
-            required
-        >
+            <img 
+                src="img/logo.png" 
+                alt="Jalyry Logo"
+                class="logo"
+            >
 
-        <input
-            type="password"
-            id="password"
-            placeholder="Contraseña"
-            required
-        >
+        </div>
 
-        <button type="submit">
-            Registrarse
-        </button>
+        <!-- FORM -->
+        <form id="register-form">
 
-    </form>
+            <input
+                type="text"
+                id="name"
+                placeholder="Nombre completo"
+                required
+            >
 
-    <a href="login.html" class="admin-link">
-    ¿Ya tienes cuenta? Inicia sesión
-</a>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Número telefónico"
+                required
+            >
 
-    <p id="message"></p>
+            <input
+                type="email"
+                id="email"
+                placeholder="Correo electrónico"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña (mínimo 6 caracteres)"
+                minlength="6"
+                required
+            >
+
+            <button type="submit">
+                Registrarse
+            </button>
+
+        </form>
+
+        <!-- LINKS -->
+        <div class="login-links">
+
+            <a href="login.html">
+                ¿Ya tienes cuenta? Inicia sesión
+            </a>
+
+        </div>
+
+        <p id="message"></p>
+
+    </div>
 
 </div>
 

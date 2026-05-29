@@ -1,0 +1,285 @@
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content{
+
+    flex: 1;
+
+    padding: 40px;
+
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.appointments-container{
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.appointments-container h1{
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+#appointment-form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+/* =========================
+   CAJAS
+========================= */
+
+.section-box{
+
+    background: #2b2b2b;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #3d3d3d;
+
+}
+
+/* =========================
+   LABELS
+========================= */
+
+.section-box label{
+
+    display: block;
+
+    color: #ffb3b3;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.section-box input,
+.section-box select,
+.section-box textarea{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #555;
+
+    border-radius: 10px;
+
+    background: #1e1e1e;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+/* =========================
+   FOCUS
+========================= */
+
+.section-box input:focus,
+.section-box select:focus,
+.section-box textarea:focus{
+
+    border: 1px solid #d62828;
+
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.section-box textarea{
+
+    resize: none;
+
+    min-height: 140px;
+
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+#appointment-form button{
+
+    background: #d62828;
+
+    color: white;
+
+    border: none;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+#appointment-form button:hover{
+
+    background: #b71f1f;
+
+}
+
+/* =========================
+   MENSAJES
+========================= */
+
+#message{
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: -10px;
+
+    color: #ff4d4d;
+
+}
+
+/* =========================
+   CONTENEDOR CITAS
+========================= */
+
+#appointments-container{
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+/* =========================
+    CITA
+========================= */
+
+.appointment-card{
+
+    background: #2b2b2b;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #3d3d3d;
+
+}
+
+.appointment-card h3{
+
+    color: white;
+
+    margin-bottom: 10px;
+
+}
+
+.appointment-card p{
+
+    color: #d1d1d1;
+
+    margin-bottom: 8px;
+
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status{
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 8px 15px;
+
+    border-radius: 8px;
+
+    background: #d62828;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+/* =========================
+   BOTÓN CANCELAR
+========================= */
+
+.cancel-btn{
+
+    margin-top: 12px;
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #444;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background: #d62828;
+
+}

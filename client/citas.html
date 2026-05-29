@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Citas</title>
+
+    <link rel="stylesheet"
+    href="../css/menu_client.css">
+
+    <link rel="stylesheet"
+    href="../css/citas.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>Jalyry</h2>
+
+        <nav>
+
+            <a href="client_dashboard.html">
+                Inicio
+            </a>
+
+            <a href="reg_vehiculos.html">
+                Mis Vehículos
+            </a>
+
+            <a href="historial.html">
+                Historial
+            </a>
+
+            <a href="citas.html">
+                Citas
+            </a>
+
+        </nav>
+
+        <button id="logout-btn">
+            Cerrar sesión
+        </button>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main-content">
+
+        <div class="appointments-container">
+
+            <h1>
+                Agendar Cita
+            </h1>
+
+            <!-- FORMULARIO -->
+            <form id="appointment-form">
+
+                <!-- VEHÍCULO -->
+                <div class="section-box">
+
+                    <label>
+                        Vehículo
+                    </label>
+
+                    <select
+                        id="vehicle"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona un vehículo
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- FECHA -->
+                <div class="section-box">
+
+                    <label>
+                        Fecha
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+
+                </div>
+
+                <!-- HORA -->
+                <div class="section-box">
+
+                    <label>
+                        Hora
+                    </label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        required
+                    >
+
+                </div>
+
+                <!-- DESCRIPCIÓN -->
+                <div class="section-box">
+
+                    <label>
+                        Descripción del problema
+                    </label>
+
+                    <textarea
+                        id="problem"
+                        placeholder="Describe el problema del vehículo"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <!-- BOTÓN -->
+                <button type="submit">
+
+                    Enviar Cita
+
+                </button>
+
+                <!-- MENSAJES -->
+                <p id="message"></p>
+
+            </form>
+
+            <!-- LISTA CITAS -->
+            <div id="appointments-container">
+
+                <!-- LAS CITAS SE MOSTRARÁN AQUÍ -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module"
+src="../js/citas.js"></script>
+
+<script src="../js/seguridad.js"></script>
+
+</body>
+</html>

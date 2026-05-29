@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Vehículos</title>
+
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="../css/menu_client.css">
+
+    <!-- CSS VEHÍCULOS -->
+    <link rel="stylesheet" href="../css/reg_vehiculos.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>Jalyry</h2>
+
+        <nav>
+
+            <a href="client_dashboard.html">
+                Inicio
+            </a>
+
+            <a href="reg_vehiculos.html">
+                Mis Vehículos
+            </a>
+
+            <a href="historial.html">
+                Historial
+            </a>
+
+            <a href="citas.html">
+                Citas
+            </a>
+
+
+        </nav>
+
+        <button id="logout-btn">
+            Cerrar sesión
+        </button>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main-content">
+
+        <!-- SECCIÓN FORMULARIO -->
+        <div class="section-box">
+
+            <h1>
+                Registrar Vehiculos
+            </h1>
+
+            <!-- FORMULARIO -->
+            <form id="vehicle-form">
+
+                <input
+                    type="text"
+                    id="brand"
+                    placeholder="Marca"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="model"
+                    placeholder="Modelo"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="year"
+                    placeholder="Año"
+                    required
+                >
+
+                <button type="submit">
+                    Registrar Vehículo
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- SECCIÓN VEHÍCULOS -->
+        <div class="section-box">
+
+            <h1 class="vehicles-title">
+                Vehículos registrados
+            </h1>
+
+            <!-- LISTA -->
+            <div id="vehicles-container">
+
+                <!-- VEHÍCULO EJEMPLO -->
+                <div class="vehicle-card">
+
+                
+
+                    <div class="vehicle-buttons">
+
+                        <button
+                            class="edit-btn"
+                            data-id="${vehicleId}"
+                            data-brand="${vehicle.brand}"
+                            data-model="${vehicle.model}"
+                            data-year="${vehicle.year}"
+                        >
+                            Editar
+                        </button>
+
+                        <button 
+                            class="delete-btn"
+                            data-id="${vehicleId}"
+                        >
+                            Eliminar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module" src="../js/reg_vehiculos.js"></script>
+
+
+</body>
+</html>
