@@ -40,7 +40,7 @@ if(logoutBtn){
             await signOut(auth);
 
             window.location.href =
-            "../login.html";
+            "../index.html";
 
         }catch(error){
 
