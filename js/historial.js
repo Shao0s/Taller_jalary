@@ -217,7 +217,7 @@ onAuthStateChanged(auth, async (user) => {
     }else{
 
         window.location.href =
-        "../login.html";
+        "../index.html";
 
     }
 

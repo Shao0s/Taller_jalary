@@ -58,7 +58,7 @@ onAuthStateChanged(auth, async (user) => {
     } else {
 
         // SI NO HAY SESIÓN
-        window.location.href = "../login.html";
+        window.location.href = "../index.html";
     }
 
 });
@@ -76,7 +76,7 @@ logoutBtn.addEventListener("click", async () => {
 
         await signOut(auth);
 
-        window.location.href = "../login.html";
+        window.location.href = "../index.html";
     }
 
 });
