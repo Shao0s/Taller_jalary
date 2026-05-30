@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Cliente</title>
+    <title>Inicio - Jalyry</title>
 
     <link rel="stylesheet" href="../css/menu_client.css">
+    <link rel="stylesheet" href="../css/inicio.css">
 </head>
 
 <body>
@@ -19,23 +20,23 @@
 
         <nav>
 
-    <a href="client_dashboard.html">
-        Inicio</a>
+            <a href="client_dashboard.html">
+                Inicio
+            </a>
 
-    <a href="reg_vehiculos.html">
-        Mis Vehículos
-    </a>
+            <a href="reg_vehiculos.html">
+                Mis Vehículos
+            </a>
 
-    <a href="historial.html">
-        Historial
-    </a>
+            <a href="historial.html">
+                Historial
+            </a>
 
-    <a href="citas.html">
-        Citas
-    </a>
+            <a href="citas.html">
+                Citas
+            </a>
 
-
-</nav>
+        </nav>
 
         <button id="logout-btn">
             Cerrar sesión
@@ -50,11 +51,61 @@
             Bienvenido
         </h1>
 
-     
+        <!-- DESCRIPCIÓN -->
+        <section class="about-section">
+
+            <h2>Sobre Nosotros</h2>
+
+            <p>
+                En Jalyry nos especializamos en el mantenimiento y reparación
+                de vehículos. Nuestro objetivo es ofrecer un servicio confiable,
+                rápido y de calidad para que tu automóvil se mantenga en las
+                mejores condiciones.
+            </p>
+
+            <p>
+                Contamos con personal capacitado, herramientas modernas y una
+                atención enfocada en la satisfacción de nuestros clientes.
+            </p>
+
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="gallery-section">
+
+            <h2>Nuestro Taller</h2>
+
+            <div class="gallery">
+
+                <img
+                    src="../img/taller1.png"
+                    alt="Área de trabajo"
+                >
+
+                <img
+                    src="../img/taller2.png"
+                    alt="Mantenimiento de vehículos"
+                >
+
+                <img
+                    src="../img/taller3.png"
+                    alt="Herramientas del taller"
+                >
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
 
 <script type="module" src="../js/client-dashboard.js"></script>
 
 <script src="../js/seguridad.js"></script>
+<script type="module" src="../js/logout.js"></script>
+
+<script type="module" src="../js/seguridad.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,65 @@
+.about-section{
+
+    background: #2f2f2f;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+.about-section h2{
+
+    margin-bottom: 15px;
+
+}
+
+.about-section p{
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+
+}
+
+.gallery-section{
+
+    background: #2f2f2f;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+}
+
+.gallery-section h2{
+
+    margin-bottom: 20px;
+
+}
+
+.gallery{
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.gallery img{
+
+    width: 300px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+}

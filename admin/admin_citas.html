@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Citas</title>
+
+    <link rel="stylesheet"
+    href="../css/menu_admin.css">
+
+    <link rel="stylesheet"
+    href="../css/admin_citas.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>Jalyry Admin</h2>
+
+        <nav>
+
+            <a href="admin_dashboard.html">
+                Inicio
+            </a>
+
+            <a href="admin_citas.html">
+                Trabajo pendiente
+            </a>
+
+            <a href="admin_historial.html">
+                Historial
+            </a>
+
+        </nav>
+
+        <button id="logout-btn">
+            Cerrar sesión
+        </button>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main-content">
+
+        <h1>
+            Gestión de Citas
+        </h1>
+
+        <div id="appointments-container">
+
+            <!-- Las citas se cargarán aquí -->
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module"
+src="../js/admin_citas.js"></script>
+
+<script type="module"
+src="../js/logout.js"></script>
+
+<script type="module"
+src="../js/seguridad.js"></script>
+
+</body>
+</html>

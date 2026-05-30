@@ -1,0 +1,177 @@
+/* =========================
+   TÍTULO
+========================= */
+
+.main-content h1{
+
+    margin-bottom: 25px;
+
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+#appointments-container{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+/* =========================
+   TARJETA CITA
+========================= */
+
+.appointment-card{
+
+    background-color: #2f2f2f;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #ff9800;
+
+}
+
+.appointment-card h3{
+
+    margin-bottom: 12px;
+
+    color: #ff9800;
+
+}
+
+.appointment-card p{
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+
+}
+
+/* =========================
+   ESTADO
+========================= */
+
+.status{
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+.pending{
+
+    background-color: #f57c00;
+
+    color: white;
+
+}
+
+.in-progress{
+
+    background-color: #1976d2;
+
+    color: white;
+
+}
+
+.completed{
+
+    background-color: #2e7d32;
+
+    color: white;
+
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.appointment-buttons{
+
+    margin-top: 15px;
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.process-btn{
+
+    background-color: #1976d2;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.process-btn:hover{
+
+    opacity: 0.85;
+
+}
+
+.finish-btn{
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.finish-btn:hover{
+
+    opacity: 0.85;
+
+}
+
+/* =========================
+   SIN CITAS
+========================= */
+
+.no-appointments{
+
+    background-color: #2f2f2f;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}

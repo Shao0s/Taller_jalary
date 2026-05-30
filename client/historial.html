@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Cliente</title>
 
-    <link rel="stylesheet" href="../css/menu_client.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Historial</title>
+
+    <link rel="stylesheet"
+    href="../css/menu_client.css">
+
+    <link rel="stylesheet"
+    href="../css/historial.css">
+
 </head>
 
 <body>
@@ -19,23 +28,23 @@
 
         <nav>
 
-    <a href="client_dashboard.html">
-        Inicio</a>
+            <a href="client_dashboard.html">
+                Inicio
+            </a>
 
-    <a href="reg_vehiculos.html">
-        Mis Vehículos
-    </a>
+            <a href="reg_vehiculos.html">
+                Mis Vehículos
+            </a>
 
-    <a href="historial.html">
-        Historial
-    </a>
+            <a href="historial.html">
+                Historial
+            </a>
 
-    <a href="citas.html">
-        Citas
-    </a>
+            <a href="citas.html">
+                Citas
+            </a>
 
-
-</nav>
+        </nav>
 
         <button id="logout-btn">
             Cerrar sesión
@@ -46,15 +55,55 @@
     <!-- CONTENIDO -->
     <main class="main-content">
 
-        <h1 id="welcome-message">
-            Bienvenido
-        </h1>
+        <div class="history-container">
 
-     
+            <h1>
+                Historial de Servicios
+            </h1>
 
-<script type="module" src="../js/client-dashboard.js"></script>
+            <!-- FILTRO VEHÍCULO -->
 
+            <div class="section-box">
 
+                <label>
+                    Vehículo
+                </label>
+
+                <select
+                    id="vehicle-filter"
+                >
+
+                    <option value="">
+                        Selecciona un vehículo
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- HISTORIAL -->
+
+            <div
+                id="history-list"
+            >
+
+                <!-- Se carga con JS -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module"
+src="../js/historial.js"></script>
+
+<script type="module"
+src="../js/logout.js"></script>
+
+<script src="../js/seguridad.js"></script>
 
 </body>
 </html>

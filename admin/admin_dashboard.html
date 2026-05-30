@@ -1,15 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrativo</title>
+
+    <link rel="stylesheet"
+    href="../css/menu_admin.css">
+
 </head>
 
 <body>
 
-<h1>Bienvenido Administrador 🔥</h1>
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>Jalyry Admin</h2>
+
+        <nav>
+
+            <a href="admin_dashboard.html">
+                Inicio
+            </a>
+
+            <a href="admin_citas.html">
+                Trabajos Pendientes
+            </a>
+
+            <a href="admin_historial.html">
+                Historial
+            </a>
+
+        </nav>
+
+        <button id="logout-btn">
+            Cerrar sesión
+        </button>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="main-content">
+
+        <h1>
+            Panel Administrativo
+        </h1>
+
+        <!-- ESTADÍSTICAS -->
+        <div class="stats-container">
+
+            <div class="stat-card">
+
+                <h3>
+                    Clientes
+                </h3>
+
+                <p id="total-clients">
+                    0
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+                    Vehículos
+                </h3>
+
+                <p id="total-vehicles">
+                    0
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+                    Pendientes
+                </h3>
+
+                <p id="pending-jobs">
+                    0
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+                    En Proceso
+                </h3>
+
+                <p id="process-jobs">
+                    0
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+                    Terminados
+                </h3>
+
+                <p id="finished-jobs">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ÚLTIMOS TRABAJOS -->
+        <h2>
+            Últimos Trabajos
+        </h2>
+
+        <div id="recent-jobs">
+
+            <!-- Se cargan desde JS -->
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module"
+src="../js/admin_dashboard.js"></script>
+
+<script type="module"
+src="../js/logout.js"></script>
+
+<script type="module"
+src="../js/seguridad.js"></script>
 
 </body>
-
-<script type="module" src="js/seguridad.js"></script>
 </html>

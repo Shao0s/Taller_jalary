@@ -236,17 +236,65 @@ onAuthStateChanged(auth, (user) => {
 
             e.preventDefault();
 
-            // DATOS
-            const brand =
-            document.getElementById("brand").value;
+           // DATOS
+const brand =
+document.getElementById("brand").value.trim();
 
-            const model =
-            document.getElementById("model").value;
+const model =
+document.getElementById("model").value.trim();
 
-            const year =
-            document.getElementById("year").value;
+const year =
+parseInt(
+    document.getElementById("year").value
+);
 
-            try{
+// =========================
+// VALIDACIONES
+// =========================
+
+// MARCA
+
+if(brand.length < 2){
+
+    alert(
+        "Ingresa una marca válida"
+    );
+
+    return;
+
+}
+
+// MODELO
+
+if(model.length < 2){
+
+    alert(
+        "Ingresa un modelo válido"
+    );
+
+    return;
+
+}
+
+// AÑO
+
+const currentYear =
+new Date().getFullYear();
+
+if(
+    year < 1950 ||
+    year > currentYear + 1
+){
+
+    alert(
+        `Ingresa un año valido ${currentYear + 1}`
+    );
+
+    return;
+
+}
+
+try{
 
                 // =========================
                 // ACTUALIZAR
